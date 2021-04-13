@@ -1,4 +1,4 @@
-# Aufgabe 0
+# Aufgabe zu Woche 2
 
 Willkommen bei Programmieren 2 und bei github classroom! Das hier ist die erste Aufgabe zum Aufwärmen.
 
