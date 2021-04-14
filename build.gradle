@@ -1,6 +1,9 @@
 plugins {
     id 'java'
+    id 'application'
 }
+
+mainClassName = 'org.htw.prog2.aufgabe0.MyProject'
 
 group 'org.example'
 version '1.0-SNAPSHOT'
@@ -12,8 +15,7 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-
-    compile 'org.knowm.xchart:xchart:3.8.0'
+    implementation 'org.knowm.xchart:xchart:3.8.0'
 }
 
 test {
