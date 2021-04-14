@@ -20,7 +20,7 @@ class MyProjectTest {
      * <ol/>
      */
     @Test
-    void calculateBabylonianRoot() {
+    void calculateBabylonianRootBestCase() {
         Random r = new Random();
         // Tests for point 1
         for(int numtest = 0; numtest < 10; numtest++) {
@@ -33,10 +33,19 @@ class MyProjectTest {
                     "Wrong root with value = " + value + " and maxerror = " + maxerror +
                     ": Expected: " + expected + " but got: " + result[result.length-1]);
         }
+    }
+    
+    @Test
+    void calculateBabylonianRootZero() {
         // Tests for point 2
         double[] res = MyProject.calculateBabylonianRoot(0, 5, 0.0001);
         assertTrue(res[res.length-1] == 0, "Root of 0 should be 0, got: "
                 + res[res.length-1]);
+    }
+    
+    @Test
+    void calculateBabylonianRootNegativeRoot() {
+        Random r = new Random();
         // Tests for point 3
         for(int numtest = 0; numtest < 10; numtest++) {
             double value = -1*r.nextInt(100000);
@@ -47,6 +56,11 @@ class MyProjectTest {
                     "Root of negative value = " + value + " should be 0, got: "
                             + result[result.length-1]);
         }
+    }
+    
+    @Test
+    void calculateBabylonianRootNegativeMaxerror() {
+        Random r = new Random();
         // Tests for point 4
         for(int numtest = 0; numtest < 10; numtest++) {
             double value = r.nextInt(100000);
