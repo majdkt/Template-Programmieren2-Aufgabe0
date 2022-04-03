@@ -17,11 +17,11 @@ public class MyProject {
      * Continue until the estimated error reaches the desired maximum error
      * @param value The value to calculate the root of
      * @param initial The initial value to start the calculation with
-     * @param maxerror The maximum allowed error
+     * @param maxError The maximum allowed error
      * @return An array containing the values of all iterations. The last value in the array is the final estimate.
      */
-    public static double[] calculateBabylonianRoot(double value, double initial, double maxerror) {
-        // TODO: Implementieren.
+    public static double[] calculateBabylonianRoot(double value, double initial, double maxError) {
+        // TODO: Implement.
         return new double[] {initial};
     }
 
