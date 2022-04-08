@@ -23,7 +23,7 @@ public class MyProject {
     public static double[] calculateBabylonianRoot(double value, double initial, double maxError) {
         // TODO: Implement.
         return new double[] {initial};
-    }
+    } // Majd test
 
     public static void plotData(double[] values) {
         XYChart chart = new XYChart(500, 500);
